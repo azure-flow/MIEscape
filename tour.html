@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIEscape</title>
+
+    
+
+    <script src="assets/css/tailwind.css"></script>
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/aos.css" rel="stylesheet" />
+    <link href="assets/css/font.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/simpleParallax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <style>
+        body,
+        * {
+            font-family: "Zen Old Mincho", serif;
+        }
+
+        .simpleParallax {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="relative md:grid md:grid-cols-10 w-full max-h-[1084px]">
+        <div
+            class="relative md:col-span-3 w-full flex md:flex-col flex-row bg-[#e7e8d5] items-start md:p-12 lg:p-16 xl:p-24 p-8 pt-12">
+            <div
+                class="absolute top-[2%] sm:top-[8%] md:top-[8%] xl:top-[10%] left-[6%] md:left-[18%] flex flex-col md:gap-1 lg:gap-2 xl:gap-4">
+                <button id="hamburgerBtn" aria-label="Open menu"
+                    class="md:block hidden  flex-col w-[48px] sm:w-[56px] md:w-[32px] xl:w-[80px] gap-2 mt-8 sm:mt-0 mb-6 md:mb-4 cursor-pointer z-10 focus:outline-none">
+                    <div class="h-[1px] w-full bg-[#8A8749]  mb-[3px] sm:mb-[8px] md:mb-[8px] xl:mb-[18px]"></div>
+                    <div class="h-[1px] w-3/4 bg-[#8A8749]  mb-[3px] sm:mb-[8px] md:mb-[8px] xl:mb-[18px]"></div>
+                    <div class="h-[1px] w-2/4 bg-[#8A8749]"></div>
+                </button>
+
+                <button id="hamburgerBtn_sp" aria-label="Open menu"
+                    class="md:hidden block flex flex-col w-[48px] sm:w-[56px] md:w-[32px] xl:w-[80px] gap-2 mt-8 sm:mt-0 mb-6 md:mb-4 cursor-pointer z-10 focus:outline-none">
+                    <div class="h-[1px] w-full bg-[#8A8749]  mb-[3px] sm:mb-[8px] md:mb-[3px] xl:mb-[8px]"></div>
+                    <div class="h-[1px] w-3/4 bg-[#8A8749]  mb-[3px] sm:mb-[8px] md:mb-[3px] xl:mb-[8px]"></div>
+                    <div class="h-[1px] w-2/4 bg-[#8A8749]"></div>
+                </button>
+                <div
+                    class="grid gap-0 font-normal text-[9px] sm:text-[12px] md:text-[10px] xl:text-[16px] text-left leading-[1.8]">
+                    <a href="/tour.html"><span class="text-black font-bold border-b border-black">ENGLISH</span></a>
+                    <a href="/tour_ja.html"><span class="text-black hover:border-b border-black">日本語</span></a>
+                    <a href="/tour_ch.html"><span class="text-black hover:border-b border-black">繁體中文</span></a>
+                </div>
+            </div>
+            <div class="flex-grow flex flex-col justify-center items-end md:items-start md:mb-0 sm:mb-16">
+                <h1
+                    class=" font-garamond text-[#979c60] text-[2rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[4rem] font-normal leading-[1.15] mt-16 md:pb-24 lg:pb-36 xl:pb-48">
+                    Tour</h1>
+
+            </div>
+        </div>
+        <div class="md:col-span-7 w-full relative group sm:h-full h-[441px] ">
+            <img loading="lazy" src="assets/images/tour/main.png" class="md:block hidden w-full h-full object-cover"
+                alt="MIEscape 1">
+            <img loading="lazy" src="assets/images/tour/main_sp.png" class="block md:hidden w-full h-full object-cover"
+                alt="MIEscape 1">
+        </div>
+        <a href="/contact.html">
+            <button id="fixedContactBtn"
+                class="fixed left-0 md:left-[5%] bottom-0 z-50 px-10 py-1 md:px-8 xl:px-14 xl:py-2 bg-[#000a02cc] text-[#DCD999] text-[24px] lg:text-[20px] xl:text-[28px] tracking-wide -none shadow-none transition-all duration-100 opacity-0 pointer-events-none"
+                style="display: block; letter-spacing: 0.07em;">
+                Contact
+            </button>
+        </a>
+    </section>
+    <section
+        class="w-full bg-[#112825] flex items-center justify-center py-24 md:pt-28 lg:pt-36 xl:pt-44 pb-[300px] md:pb-[80px] lg:pb-[96px] xl:pb-72 md:px-8 lg:px-16 xl:px-16">
+        <div class="flex flex-col items-center relative max-w-[1500px] w-full px-6 md:px-0 gap-8 lg:gap-8 xl:gap-16">
+            <div class="flex md:flex-row flex-col items-end lg:gap-8 xl:gap-12">
+                <div>
+                    <h2
+                        class="text-[#8A8749] text-left text-[28px] md:text-[24px] lg:text-[36px] xl:text-[60px] xl:leading-[] lg:pb-4 font-normal">
+                        Zen & Bonsai Odyssey: <br> A Premium MIEscape Voyage
+                    </h2>
+                </div>
+                <div>
+                    <img loading="lazy" src="assets/images/tour/mark.png" alt=""
+                        class="w-[130px] w-[110px] lg:w-[180px] xl:w-[260px] pointer-events-none select-none">
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col md:items-end">
+                <div class="pb-4">
+                    <img loading="lazy" src="assets/images/tour/mark.png" alt=""
+                        class="w-[90px] md:w-[200px] lg:w-[250px] xl:w-[230px] pointer-events-none select-none">
+                </div>
+                <div class="flex flex-col items-end gap-4 md:gap-6 lg:gap-8 xl:gap-12">
+                    <p
+                        class="border-l-[6px] border-solid border-[#8a8749] max-w-[1145px] text-left text-[#e8ecd7] 
+                        text-[12px] md:text-[10px] lg:text-[12px] xl:text-[20px] leading-[2] md:leading-[1.6] md:leading-[1.8] xl:leading-[2] pl-4 lg:pl-16 xl:pl-24">
+                        In today's fast-paced world, we believe true luxury lies in finding a moment of genuine
+                        tranquility.
+                        We invite you to step away from the everyday hustle and immerse yourself in the profound
+                        spiritual heritage of Japan.
+                        Through the timeless art of bonsai and the subtle beauty of "Wabi-Sabi"—the aesthetic of finding
+                        perfection in imperfection—you will discover a philosophy that cherishes nature and quiet
+                        contemplation.
+                        Our experiences are designed not merely as tours, but as meditative journeys into the heart of
+                        Japanese spirituality.
+                        We wish to share a deeper sense of inner peace and a connection with nature that has been
+                        cultivated for centuries, offering you a serene space for reflection and self-discovery.
+                    </p>
+                    <img loading="lazy" src="assets/images/tour/mark.png" alt=""
+                        class="w-[120px] md:w-[90px] lg:w-[160px] xl:w-[230px] pointer-events-none select-none">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="relative flex flex-col justify-center shadow-lg px-8 md:px-12 lg:px-24 xl:px-32 pb-[200px] md:pb-[100px] lg:pb-[150px] xl:pb-[200px]">
+        <div class="absolute inset-0 w-full h-full -z-10">
+            <img src="assets/images/tour/bg_sea.png" alt="Sea background"
+                class="parallax-img w-full h-full object-cover" style="pointer-events:none; user-select:none;"
+                loading="lazy">
+        </div>
+        <div
+            class="max-w-[1480px] w-full md:w-[672px] lg:w-[800px] xl:w-full flex flex-col mx-auto relative gap-10 xl:gap-20 mt-[-275px] md:mt-[-100px] lg:mt-[-120px] xl:mt-[-300px]">
+            <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px]">
+                <div class="pl-[25%] w-full">
+                    <span
+                        class="left-[10%] text-white text-[2.5rem] md:text-[2rem] xl:text-[4rem] leading-[0.7] tracking-tight pl-2">
+                        DAY1
+                    </span>
+                </div>
+                <div
+                    class="flex md:flex-row flex-col bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                    <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                        data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        <h3
+                            class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                            Private <br>Transfer to MIEscape
+                        </h3>
+                        <p
+                            class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                            Your personal chauffeur greets you at Sendai Station or Airport for a seamless journey.
+                            Relax in comfort as we escort you to the serene MIEscape coast.
+                        </p>
+                    </div>
+                    <div class="md:w-[65%] w-full flex justify-center items-center">
+                        <img loading="lazy" src="assets/images/tour/matsushima.png" alt="Private Transfer to MIEscape"
+                            class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                    </div>
+                </div>
+                <div class="md:block absolute left-[40%] top-36 bottom-0 w-1 h-[100%] bg-[#363020] z-0"></div>
+            </div>
+            <div class="w-full flex justify-end">
+                <div
+                    class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px] md:mr-[10%]">
+                    <div
+                        class="flex md:flex-row flex-col-reverse bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                        <div class="md:w-[65%] w-full flex justify-center items-center">
+                            <img loading="lazy" src="assets/images/tour/culture.png"
+                                alt="Private Transfer to MIEscape"
+                                class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                                data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        </div>
+                        <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                            <h3
+                                class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                                Culture at<br>Kanran-tei Teahouse
+                            </h3>
+                            <p
+                                class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                                Enjoy a sake tasting with a traditional meal. Later, inspired by the view, express your
+                                creativity in a guided haiku workshop in this elegant, historic setting.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:block absolute right-[30%] top-36 bottom-0 w-1 h-[100%] bg-[#363020] z-0">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-end">
+                <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px]">
+                    <div
+                        class="flex md:flex-row flex-col bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                        <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                            <h3
+                                class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                                Bonsai <br> Exhibition with a Master
+                            </h3>
+                            <p
+                                class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                                A bonsai master will guide you through a special exhibition. Discover the stories behind
+                                each tree and gain deeper insight into this profound and living art form.
+                            </p>
+                        </div>
+                        <div class="md:w-[65%] w-full flex justify-center items-center">
+                            <img loading="lazy" src="assets/images/tour/bonsai.png" alt="Private Transfer to MIEscape"
+                                class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                                data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        </div>
+                    </div>
+                    <div class="md:block absolute left-[30%] top-36 bottom-0 w-1 h-[100%] bg-[#363020] z-0"></div>
+                </div>
+            </div>
+            <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px] mr-[10%]">
+                <div
+                    class="flex md:flex-row flex-col-reverse bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                    <div class="md:w-[65%] w-full flex justify-center items-center">
+                        <img loading="lazy" src="assets/images/tour/arts.png" alt="Private Transfer to MIEscape"
+                            class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                    </div>
+                    <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                        data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        <h3
+                            class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                            Wabi-Sabi & Traditional Arts
+                        </h3>
+                        <p
+                            class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                            In the exclusive Goza-no-ma room, a master explains the philosophy of wabi-sabi, followed by
+                            a captivating private performance of traditional Japanese arts.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:block absolute right-[35%] top-36 bottom-0 w-1 h-[100%] bg-[#363020] z-0">
+                </div>
+            </div>
+            <div class="w-full flex justify-center">
+                <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px]">
+                    <div
+                        class="flex md:flex-row flex-col bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                        <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                            <h3
+                                class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                                An Evening <br> of Luxury at Shoan
+                            </h3>
+                            <p
+                                class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                                Savor an exquisite kaiseki dinner featuring seasonal, local delicacies. Then, retire to
+                                your private room, enjoying the serene atmosphere of this exclusive inn overlooking the
+                                bay.
+                            </p>
+                        </div>
+                        <div class="md:w-[65%] w-full flex justify-center items-center">
+                            <img loading="lazy" src="assets/images/tour/luxury.png" alt="Private Transfer to MIEscape"
+                                class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                                data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="relative flex flex-col bg-[#111328] object-cover justify-center shadow-lg px-8 md:px-12 lg:px-24 xl:px-32 pb-[150px] md:pb-[100px] lg:pb-[150px] xl:pb-[200px]">
+        <div
+            class="max-w-[1480px] w-full md:w-[672px] lg:w-[800px] xl:w-full flex flex-col mx-auto relative gap-10 xl:gap-20 mt-[-100px] md:mt-[-40px] lg:mt-[-80px] xl:mt-[-125px]">
+            <div class="w-full flex justify-end">
+                <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px]">
+                    <div class="pl-[25%] w-full">
+                        <span
+                            class="left-[10%] text-white text-[2.5rem] md:text-[2rem] xl:text-[4rem] leading-[0.7] tracking-tight pl-2">
+                            DAY2
+                        </span>
+                    </div>
+                    <div
+                        class="flex md:flex-row flex-col bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                        <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                            <h3
+                                class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                                Special Viewing<br> at Zuigan-ji Temple
+                            </h3>
+                            <p
+                                class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                                Visit a national treasure, Zuigan-ji, the most important Zen temple in northern Japan.
+                                You will be granted special access to view the brilliantly decorated main rooms.
+                            </p>
+                        </div>
+                        <div class="md:w-[65%] w-full flex justify-center items-center">
+                            <img loading="lazy" src="assets/images/tour/temple.png" alt="Private Transfer to MIEscape"
+                                class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                                data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        </div>
+                    </div>
+                    <div class="md:block absolute left-[40%] top-36 bottom-0 w-1 h-[100%] bg-[#8A8749] z-0"></div>
+                </div>
+            </div>
+            <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px] md:mr-[10%]">
+                <div
+                    class="flex md:flex-row flex-col-reverse bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                    <div class="md:w-[65%] w-full flex justify-center items-center">
+                        <img loading="lazy" src="assets/images/tour/lunch.png" alt="Private Transfer to MIEscape"
+                            class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                    </div>
+                    <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                        data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        <h3
+                            class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                            The Date <br> Clan's Zen Lunch
+                        </h3>
+                        <p
+                            class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                            Savor "shojin ryori," the traditional vegetarian cuisine of Zen monks. This special lunch is
+                            prepared in a style passed down by the historic Date clan.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:block absolute right-[40%] top-36 bottom-0 w-1 h-[100%] bg-[#8A8749] z-0">
+                </div>
+            </div>
+            <div class="w-full flex justify-end">
+                <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px]">
+                    <div
+                        class="flex md:flex-row flex-col bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                        <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                            <h3
+                                class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                                Cruise the <br> Magnificent Saga-kei Gorge
+                            </h3>
+                            <p
+                                class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                                Board a private boat to cruise Saga-kei, one of Japan's three most scenic gorges.
+                                Witness the dramatic, nature-carved coastline and enjoy the panoramic ocean views.
+                            </p>
+                        </div>
+                        <div class="md:w-[65%] w-full flex justify-center items-center">
+                            <img loading="lazy" src="assets/images/tour/cruise .png"
+                                alt="Private Transfer to MIEscape"
+                                class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                                data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="relative flex flex-col justify-center shadow-lg px-8 md:px-12 lg:px-24 xl:px-32 pb-[200px] md:pb-[100px] lg:pb-[150px] xl:pb-[200px]">
+        <div class="absolute inset-0 w-full h-full -z-10">
+            <img src="assets/images/tour/bg_tree.png" alt="Sea background"
+                class="parallax-img w-full h-full object-cover" style="pointer-events:none; user-select:none;"
+                loading="lazy">
+        </div>
+        <div
+            class="max-w-[1480px] w-full md:w-[672px] lg:w-[800px] xl:w-full flex flex-col mx-auto relative gap-10 xl:gap-20 mt-[-75px] md:mt-[-55px] lg:mt-[-100px] xl:mt-[-125px]">
+            <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px]">
+                <div class="pl-[25%] w-full">
+                    <span
+                        class="left-[10%] text-white text-[2.5rem] md:text-[2rem] xl:text-[4rem] leading-[0.7] tracking-tight pl-2">
+                        DAY3
+                    </span>
+                </div>
+                <div
+                    class="flex md:flex-row flex-col bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                    <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                        data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        <h3
+                            class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                            Appreciate<br> Masterpiece Bonsai at "Teien"
+                        </h3>
+                        <p
+                            class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                            Visit "Teien," a specialty bonsai gallery at the Oku-MIEscape Club House. Appreciate the
+                            exquisite, living masterpieces up close, and take the opportunity to discuss purchasing one.
+                        </p>
+                    </div>
+                    <div class="md:w-[65%] w-full flex justify-center items-center">
+                        <img loading="lazy" src="assets/images/tour/masterpiece .png"
+                            alt="Private Transfer to MIEscape"
+                            class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                    </div>
+                </div>
+                <div class="md:block absolute right-[20%] top-36 bottom-0 w-1 h-[100%] bg-[#8A8749] z-0"></div>
+            </div>
+            <div class="w-full flex justify-end">
+                <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px]">
+                    <div
+                        class="flex md:flex-row flex-col-reverse bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                        <div class="md:w-[65%] w-full flex justify-center items-center">
+                            <img loading="lazy" src="assets/images/tour/okushoan.png"
+                                alt="Private Transfer to MIEscape"
+                                class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                                data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        </div>
+                        <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                            <h3
+                                class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                                Local <br>Delicacies at Okushoan
+                            </h3>
+                            <p
+                                class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                                Enjoy a special lunch at "Okushoan." Savor the local flavors of "Oke-sushi," served in a
+                                traditional wooden tub, and fragrant "Nori-soba" noodles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:block absolute left-[20%] top-36 bottom-0 w-1 h-[100%] bg-[#8A8749] z-0">
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-full md:w-[450px] lg:w-[550px] xl:w-[1000px] 2xl:w-full max-w-[1110px]">
+                <div
+                    class="flex md:flex-row flex-col bg-[#362917]  shadow-lg overflow-hidden md:pt-[30px] lg:pt-14 xl:pt-24 relative z-10">
+                    <div class="md:w-[35%] w-full flex flex-col justify-start p-6 md:py-0 md:px-4 lg:px-6 xl:px-12"
+                        data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                        <h3
+                            class=" text-[#8A8749] text-xl md:text-[16px] lg:text-[20px] xl:text-[40px] mb-1 lg:mb-2 xl:mb-4 md:leading-[1.2] lg:leading-[1.2] xl:leading-[1.4]">
+                            Departure via Private Car
+                        </h3>
+                        <p
+                            class="text-white text-sm md:text-[10px] xl:text-[20px] leading-relaxed md:leading-[1.6] lg:leading-[1.8] xl:leading-[2]">
+                            Your private car will provide a smooth and comfortable transfer to Sendai Station or Airport
+                            for your journey home, concluding your exclusive MIEscape experience.
+                        </p>
+                    </div>
+                    <div class="md:w-[65%] w-full flex justify-center items-center">
+                        <img loading="lazy" src="assets/images/tour/departure.png" alt="Private Transfer to MIEscape"
+                            class="object-cover h-[215px] md:h-[200px] lg:h-[245px] xl:h-[496px] w-full aspect-video"
+                            data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full bg-[#e7e8d5] flex justify-center items-center py-24" style="min-height: 800px;">
+        <div class="mx-auto w-full max-w-[1920px] flex justify-center">
+            <div class="w-full max-w-[795px] px-4 py-12">
+                <h2
+                    class=" text-[#8A8749] text-center text-[32px] md:text-[36px] xl:text-[40px] 2xl:text-[60px] font-normal mb-16">
+                    Details</h2>
+                <div class="flex flex-col gap-8 text-black text-[14px] md:text-[16px] xl:text-[19px]">
+                    <div class="flex flex-row items-start mb-2 gap-6">
+                        <span
+                            class="w-[120px] md:w-[180px] lg:w-[220px] min-w-[120px] font-normal text-[#8a8749] text-[16px] md:text-[18px] xl:text-[20px] 2xl:text-[22]">Price</span>
+                        <div class="flex-1">
+                            <div>¥500,000 / person (tax included) </div>
+                            <div class="text-[13px] text-[#86886a]">*Minimum 2 guests, Maximum 10 guests.</div>
+                        </div>
+                    </div>
+                    <hr class="border-black mb-2">
+                    <div class="flex flex-row items-start mb-2 gap-6">
+                        <span
+                            class="w-[120px] md:w-[180px] lg:w-[220px] min-w-[120px] font-normal text-[#8a8749] text-[16px] md:text-[18px] xl:text-[20px] 2xl:text-[22]">Includes</span>
+                        <div class="w-full flex-1 leading-relaxed">
+                            <ul class="list-disc pl-6 space-y-0.5">
+                                <li>Private car for 3 days</li>
+                                <li>2 nights accommodation with 2 breakfasts and 2 dinners</li>
+                                <li>2 lunches</li>
+                                <li>All entrance fees and experiences as per the itinerary</li>
+                                <li>Services of a bonsai guide, an interpreter, and local guides</li>
+                                <li>All taxes and service fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="border-black mb-2">
+                    <div class="flex flex-row items-start mb-2 gap-6">
+                        <span
+                            class="w-[120px] md:w-[180px] lg:w-[220px] min-w-[120px] font-normal text-[#8a8749] text-[16px] md:text-[18px] xl:text-[20px] 2xl:text-[22]">
+                            Required Information
+                        </span>
+                        <div class="flex-1">
+                            Please inform us of any food allergies in advance.
+                        </div>
+                    </div>
+                    <hr class="border-black mb-2">
+                    <div class="flex flex-row items-start mb-2 gap-6">
+                        <span
+                            class="w-[120px] md:w-[180px] lg:w-[220px] min-w-[120px] font-normal text-[#8a8749] text-[16px] md:text-[18px] xl:text-[20px] 2xl:text-[22]">
+                            Cancellation Policy
+                        </span>
+                        <div class="flex-1 leading-relaxed">
+                            The following fees will apply for cancellations made by the traveler:
+                            <ul class="list-disc pl-6 space-y-0.5 mt-1">
+                                <li>Up to 21 days prior to departure: No charge</li>
+                                <li>20 to 8 days prior to departure: 20% of tour fee</li>
+                                <li>7 to 2 days prior to departure: 30% of tour fee</li>
+                                <li>The day before departure: 40% of tour fee</li>
+                                <li>On the day of departure: 50% of tour fee</li>
+                                <li>After departure or no-show: 100% of tour fee</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="border-black mb-2">
+                    <div class="flex flex-row items-start mb-2 gap-6">
+                        <span
+                            class="w-[120px] md:w-[180px] lg:w-[220px] min-w-[120px] font-normal text-[#8a8749] text-[16px] md:text-[18px] xl:text-[20px] 2xl:text-[22]">Important
+                            Notes</span>
+                        <div class="flex-1 leading-relaxed">
+                            <ul class="list-disc pl-6 space-y-0.5">
+                                <li>The tour itinerary is subject to change due to weather or other unforeseen
+                                    circumstances.</li>
+                                <li>The tour may be canceled if the minimum number of participants is not met. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full flex justify-center items-center bg-[url(assets/images/tour/bg_brown.png)] py-24 px-0">
+        <div class="flex md:flex-row flex-col w-full mx-auto gap-10 md:gap-10 xl:gap-40">
+            <div class="flex flex-col md:w-1/2 max-w-[880px] px-6 md:px-0">
+                <div class="w-full flex justify-center items-center">
+                    <img loading="lazy" src="assets/images/tour/tour_1.png" alt="Kanrantei bonsai experience"
+                        class="object-cover w-full shadow-lg">
+                </div>
+                <div class="w-full flex flex-row mt-2">
+                    <img loading="lazy" src="assets/images/tour/tour_2.png" alt="Cultural experience"
+                        class="object-cover w-1/2 shadow-md">
+                    <img loading="lazy" src="assets/images/tour/tour_3.png" alt="Traditional performance"
+                        class="object-cover w-1/2 shadow-md">
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-start md:w-1/2 max-w-[960px] px-8 md:gap-4 xl:gap-10">
+                <div class="w-full lg:w-[300px] xl:w-full" data-aos="fade-in" data-aos-delay="300">
+                    <h2
+                        class=" text-[#8A8749] text-[2rem] md:text-[2rem] xl:text-[2.8rem] 2xl:text-[60px] font-normal py-16 md:py-8">
+                        Exclusive<br>Kanrantei Tour:</h2>
+                    <p
+                        class="text-white text-[1rem] md:text-[1rem] xl:text-[1.5rem] leading-[2] xl:leading-[2.5] md:mb-12 lg:mb-12 xl:mb-16 max-w-[450px]">
+                        Experience the cultural essence of Day 1.
+                        This includes the haiku workshop, sake tasting, bonsai viewing, and traditional arts performance
+                        at the historic Kanran-tei Teahouse.
+                    </p>
+                    <div
+                        class="text-white w-full flex md:block justify-end md:text-left text-[12px] md:text-[16px] xl:text-2xl pt-12 md:pt-0">
+                        ¥20,000 /
+                        <span class="text-[10px] md:text-[16px] lg:text-[20px] font-normal ">&nbsp;person (tax
+                            included)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full flex justify-center items-center bg-[#e5e5e5] py-24 px-2">
+        <div
+            class="w-full max-w-[600px] bg-[#e5e5e5]   py-14 px-6 md:px-12 flex flex-col items-center shadow-none m-auto">
+            <h2 class=" text-[#181818] text-[1.6rem] md:text-[2rem] mb-8 font-normal text-center">
+                Request/Contact Form
+            </h2>
+            <form class="w-full flex flex-col gap-4 max-w-[560px] items-center">
+                <div class="w-full flex flex-col gap-1">
+                    <label for="name"
+                        class="text-[#181818] text-sm font-normal md:text-[16px] lg:text-[18px] xl:text-[20px]">
+                        Full Name<span class="text-[#c71515]">*</span>
+                    </label>
+                    <input type="text" id="name" name="name" required
+                        class="my-1 lg:my-2 bg-white h-[44px] md:h-[54px] lg:h-[64px] xl:h-[73px] text-[20px] p-4 focus:outline-none focus:border-[#8a8749]">
+                </div>
+                <div class="w-full flex flex-col gap-1">
+                    <label for="nationality"
+                        class="text-[#181818] text-sm font-normal md:text-[16px] lg:text-[18px] xl:text-[20px]">Nationality<span
+                            class="text-[#c71515]">*</span></label>
+                    <input type="text" id="nationality" name="nationality" required
+                        class="my-1 lg:my-2 bg-white h-[44px] md:h-[54px] lg:h-[64px] xl:h-[73px] text-[20px] p-4 focus:outline-none focus:border-[#8a8749]">
+                </div>
+                <div class="w-full flex flex-col gap-1">
+                    <label for="email"
+                        class="text-[#181818] text-sm font-normal md:text-[16px] lg:text-[18px] xl:text-[20px]">E-Mail<span
+                            class="text-[#c71515]">*</span></label>
+                    <input type="email" id="email" name="email" required
+                        class="my-1 lg:my-2 bg-white h-[44px] md:h-[54px] lg:h-[64px] xl:h-[73px] text-[20px] p-4 focus:outline-none focus:border-[#8a8749]">
+                </div>
+                <div class="w-full flex flex-col gap-1">
+                    <label for="date"
+                        class="text-[#181818] text-sm font-normal md:text-[16px] lg:text-[18px] xl:text-[20px]">Preferred
+                        Date</label>
+                    <input type="date" id="date" name="date"
+                        class="my-1 lg:my-2 bg-white h-[44px] md:h-[54px] lg:h-[64px] xl:h-[73px] text-[20px] p-4 focus:outline-none focus:border-[#8a8749]">
+                </div>
+                <div class="w-full flex flex-col gap-1">
+                    <label for="participants"
+                        class="text-[#181818] text-sm font-normal md:text-[16px] lg:text-[18px] xl:text-[20px]">Number
+                        of participants</label>
+                    <select id="participants" name="participants"
+                        class="my-1 lg:my-2 px-4 py-2 bg-white focus:outline-none focus:border-[#8a8749] h-[44px] md:h-[54px] lg:h-[64px] xl:h-[73px]">
+                        <option value="" disabled selected>Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select>
+                </div>
+                <div class="w-full flex flex-col gap-1">
+                    <label for="comments"
+                        class="text-[#181818]  font-normal text-sm md:text-[16px] lg:text-[18px] xl:text-[20px]">Comments</label>
+                    <textarea id="comments" name="comments" rows="7"
+                        class="my-1 lg:my-2 px-4 py-2 lg:py-4 bg-white resize-none focus:outline-none focus:border-[#8a8749] text-sm md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[1.6]"></textarea>
+                </div>
+                <div class="flex items-center mt-2">
+                    <input type="checkbox" id="agreement" required class="mr-2">
+                    <label
+                        for="my-1 lg:my-2 16 h-[7h-[44px] md:3px] 54xt-[ lg:3px] t64t-[ xl:3px] text-[20px] p-4px] lg:text-[18px] xl:text-[20px]">
+                        I have read and agree to the <a href="/policy.html" class="underline"> Privacy Policy </a>.
+                    </label>
+                </div>
+                <button type="submit"
+                    class="mt-6 w-[80%] bg-[#8a8749] text-white text-[28px] md:text-[36px] lg:text-[44px] xl:text-[54px] tracking-widest -sm hover:bg-[#9b9960] transition">
+                    SEND
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="w-full bg-[#000A02] text-[#aeb07b] pt-16 pb-12 md:h-[540px] xl:h-[940px]">
+        <div class="max-w-[1920px] m-auto px-6">
+            <div class="max-w-[1259px] mx-auto">
+                <div
+                    class="md:pt-24 xl:pt-48 flex flex-col sm:flex-row justify-between items-startsm:items-center mx-auto ">
+                    <div class="mb-8 sm:mb-0">
+                        <span class="block text-3xl md:text-[40px] xl:text-[80px] tracking-wider">MIEscape</span>
+                    </div>
+                    <div class="flex flex-col sm:items-end items-start gap-4 w-full sm:w-auto">
+                        <div
+                            class="flex flex-row text-[23px] items-center justify-between w-full md:gap-10 xl:gap-20 mb-2">
+                            <div
+                                class="flex flex-row text-[10px] md:text-[11px] xl:text-[20px] font-normal justify-center items-center gap-6 md:gap-6 lg:gap-10 xl:gap-12">
+                                <a href="/tour.html"
+                                    class="text-[#c7c7c7] border-b border-[#c7c7c7]  transition">ENGLISH</a>
+                                <a href="/tour_ja.html" class="text-[#c7c7c7] hover:border-b">日本語</a>
+                                <a href="/tour_ch.html" class="text-[#c7c7c7] hover:border-b">繁體中文</a>
+                            </div>
+                            <div class="flex flex-row justify-center items-center gap-4 md:gap-4 lg:gap-8 xl:gap-10">
+                                <a href="https://www.instagram.com/bonsai_matsushima/" class="mx-4 inline-block">
+                                    <i
+                                        class="fab fa-instagram text-white md:text-[24px] xl:text-[40px] text-[18px]"></i>
+                                </a>
+                                <a href="/contact.html" class="inline-block text-xl">
+                                    <i
+                                        class="fa-regular fa-envelope text-white md:text-[24px] xl:text-[40px] text-[18px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-4 gap-10 text-white text-center text-base md:text-[24px] xl:text-[40px] md:py-20 xl:py-0 py-12 xl:my-[160px]">
+                    <a href="/index.html" class="col-span-1 hover:underline">Top</a>
+                    <a href="/about.html" class="col-span-1 hover:underline">About</a>
+                    <a href="/tour.html" class="col-span-1 hover:underline">Tour</a>
+                    <a href="/access.html" class="col-span-1 hover:underline">Access</a>
+                </div>
+                <div
+                    class="flex flex-row justify-between items-center md:text-[12px] xl:text-[16px] text-[10px] text-white">
+                    <p> © BBI Hanaza</p>
+                    <div class="flex gap-8">
+                        <a href="/policy.html" class="hover:underline">Privacy Policy</a>
+                        <a href="/terms.html" class="hover:underline">Terms of use</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="sideModal"
+        class="fixed inset-0 z-50 flex bg-white bg-opacity-40 transition-all duration-700 ease-in-out pointer-events-none opacity-0"
+        style="transition-property: opacity;">
+        <div class="relative flex w-full h-full">
+            <div id="sideModalPanel"
+                class="transform -translate-x-full transition-transform duration-700 ease-in-out bg-[#f9faea] md:w-[250px] lg:w-[350px] xl:w-[580px] h-full shadow-2xl flex flex-col"
+                style="transition-property: transform;">
+                <div class="flex flex-col h-full p-0">
+                    <div
+                        class="flex flex-col w-full px-6 pt-10 md:pt-20 xl:pt-24 pb-7 items-start md:items-start md:pl-18 lg:pl-28 xl:pl-40">
+                        <button id="closeModalBtn" aria-label="Close menu" class="z-20 focus:outline-none">
+                            <svg class="md:w-[36px] xl:w-[64px] md:h-[48px] xl:h-[56px]" viewBox="0 0 44 44"
+                                stroke="#8A8749" fill="none">
+                                <line x1="5" y1="5" x2="44" y2="23" stroke-width="1.2" />
+                                <line x1="44" y1="5" x2="5" y2="23" stroke-width="1.2" />
+                            </svg>
+                        </button>
+                        <div
+                            class="flex flex-col items-start justify-start gap-2 text-[10px] md:text-[14px] xl:text-[16px] text-black xl:mt-5">
+                            <a href="tour.html"><span class="font-bold border-b border-black">ENGLISH</span></a>
+                            <a href="tour_ja.html" class="hover:border-b border-[#8A8749]"><span>日本語</span></a>
+                            <a href="tour_ch.html" class="hover:border-b border-[#8A8749]"><span>繁體中文</span></a>
+                        </div>
+                        <nav
+                            class="flex-1 flex flex-col items-start justify-center gap-7 md:gap-12 xl:gap-12 md:py-20 xl:py-24">
+                            <a href="/index.html"
+                                class="text-[#8A8749] text-[14px] md:text-[20px]  lg:text-[20px] xl:text-[28px] hover:underline">Top</a>
+                            <a href="/about.html"
+                                class="text-[#8A8749] text-[14px] md:text-[20px]  lg:text-[20px] xl:text-[28px] hover:underline">About</a>
+                            <a href="/tour.html"
+                                class="text-[#8A8749] text-[14px] md:text-[20px]  lg:text-[20px] xl:text-[28px] hover:underline">Tour</a>
+                            <a href="/access.html"
+                                class="text-[#8A8749] text-[14px] md:text-[20px]  lg:text-[20px] xl:text-[28px] hover:underline">Access</a>
+                        </nav>
+                        <div class="flex flex-row items-center md:gap-8 lg:gap-10 xl:gap-12">
+                            <a href="https://www.instagram.com/bonsai_matsushima/" aria-label="Instagram">
+                                <i
+                                    class="fab fa-instagram text-[#8A8749] md:text-[20px] lg:text-[28px] xl:text-[36px]"></i>
+                            </a>
+                            <a href="/contact.html" aria-label="Email">
+                                <i
+                                    class="fa-regular fa-envelope text-[#8A8749] md:text-[20px] lg:text-[28px] xl:text-[36px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="sideModalBg" class="flex-1 h-full cursor-pointer bg-transparent" tabindex="-1"></button>
+        </div>
+    </div>
+    <div id="topSpModal"
+        class="fixed inset-0 z-50 flex bg-white bg-opacity-40 transition-all duration-700 ease-in-out pointer-events-none opacity-0"
+        style="transition-property: opacity;">
+        <div class="relative w-full h-full flex flex-col">
+            <div id="topSpModalPanel"
+                class="transform -translate-y-full transition-transform duration-700 ease-in-out bg-[#f9faea] w-full h-400px shadow-2xl flex flex-col"
+                style="transition-property: transform;">
+                <div class="flex flex-row w-full pt-12 px-6 h-full ">
+                    <div class="flex flex-col">
+                        <button id="closeSpModalBtn" aria-label="Close menu"
+                            class="mb-8 mt-2 focus:outline-none bg-transparent border-none self-start">
+                            <svg class="w-8 h-8" viewBox="0 0 44 44" stroke="#8A8749" fill="none">
+                                <line x1="5" y1="5" x2="39" y2="39" stroke-width="1.2" />
+                                <line x1="39" y1="5" x2="5" y2="39" stroke-width="1.2" />
+                            </svg>
+                        </button>
+                        <div class="flex flex-col items-start gap-1 text-[11px] text-black mb-8 mt-0 gap-2">
+                            <a href="/tour.html"><span
+                                    class="font-bold border-b border-[#8A8749] text-black">ENGLISH</span></a>
+                            <a href="/tour_ja.html" class="hover:border-b border-[#8A8749]"><span>日本語</span></a>
+                            <a href="/tour_ch.html" class="hover:border-b border-[#8A8749]"><span>繁體中文</span></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-auto pb-8 items-end w-full">
+                        <nav class="flex flex-row gap-6 text-[#8A8749] text-[18px] mb-4 sm:mb-8">
+                            <a href="/index.html" class="hover:underline">Top</a>
+                            <a href="/about.html" class="hover:underline">About</a>
+                            <a href="/tour.html" class="hover:underline">Tour</a>
+                            <a href="/access.html" class="hover:underline">Access</a>
+                        </nav>
+                        <div class="flex flex-row gap-6">
+                            <a href="https://www.instagram.com/bonsai_matsushima/" aria-label="Instagram">
+                                <i class="fab fa-instagram text-[#8A8749] text-[24px]"></i>
+                            </a>
+                            <a href="/contact.html" aria-label="Email">
+                                <i class="fa-regular fa-envelope text-[#8A8749] text-[24px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="topSpModalBg" class="flex-1 w-full h-full cursor-pointer" tabindex="-1"></button>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var btn = document.getElementById('fixedContactBtn');
+            function toggleContactBtn() {
+                var scrollY = window.scrollY || window.pageYOffset;
+                if (scrollY > 2160) {
+                    btn.style.opacity = '1';
+                    btn.style.pointerEvents = 'auto';
+                } else {
+                    btn.style.opacity = '0';
+                    btn.style.pointerEvents = 'none';
+                }
+            }
+            window.addEventListener('scroll', toggleContactBtn);
+            document.addEventListener('DOMContentLoaded', toggleContactBtn);
+        })();
+    </script>
+</body>
+
+</html>
