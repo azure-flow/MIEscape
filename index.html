@@ -9,13 +9,11 @@
 
     <script src="assets/css/tailwind.css"></script>
     <link href="assets/css/main.css" rel="stylesheet" />
-    <link href="assets/css/aos.css" rel="stylesheet" />
     <link href="assets/css/font.css" rel="stylesheet" />
     <link href="assets/css/swiper.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <script src="assets/js/aos.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/simpleParallax.min.js"></script>
     <script src="assets/js/main.js"></script>
@@ -34,10 +32,10 @@
 
 <body>
     <section
-        class="relative bg-[url('assets/images/top/fv_sp.png')] md:bg-[url('assets/images/top/fv.png')] bg-cover bg-center h-[667px] md:h-[700px] lg:h-[840px] xl:h-[1080px]">
+        class="relative bg-[url('assets/images/top/fv_sp.png')] md:bg-[url('assets/images/top/fv.png')] bg-cover bg-center h-[667px] md:h-[700px] lg:h-[800px] xl:h-[1080px]">
         <div
             class="z-10 flex md:flex-col justify-between items-center md:items-start gap-6 fixed md:absolute top-[30px] md:top-[80px] lg:top-[100px]
-             xl:top-[115px] left-[40px] md:left-[100px] lg:left-[120px] xl:left-[140px] md:max-w-[116.67px] md:h-[320px] lg:h-[390px] xl:h-[350px] max-h-[350px]">
+             xl:top-[115px] left-[40px] md:left-[100px] lg:left-[120px] xl:left-[140px] md:max-w-[116.67px] md:h-[240px] lg:h-[390px] xl:h-[350px] max-h-[350px]">
             <div id="hamburgerBtn"
                 class="relative flex md:hidden flex-col text-white justify-between w-[30px] h-[20px]">
                 <div class="h-[1px] w-full bg-white"></div>
@@ -66,10 +64,10 @@
             </div>
             <div
                 class="hidden md:flex flex-col hidden justify-between h-[140px] lg:h-[165px] xl:h-[180px] text-white text-[9px] sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-left leading-[1.8]  ">
-                <a href="/terms.html"><span
+                <a href="experiences.html"><span
                         class="hover:opacity-60 transition-opacity duration-200">Experiences</span></a>
-                <a href="/terms_ja.html"><span class="hover:opacity-60 transition-opacity duration-200">Tour</span></a>
-                <a href="/terms_ch.html"><span class="hover:opacity-60 transition-opacity duration-200">About</span></a>
+                <a href="tour.html"><span class="hover:opacity-60 transition-opacity duration-200">Tour</span></a>
+                <a href="about.html"><span class="hover:opacity-60 transition-opacity duration-200">About</span></a>
             </div>
             <a id="fixedContactBtn" href="/contact.html"
                 class="hidden md:flex fixed left-0 md:left-[5%] top-0 items-center justify-center w-[100px] lg:w-[110.67px] xl:w-[116.67px] h-[35px] lg:h-[40px] xl:h-[45px] bg-[#2C6463] text-white text-[20px] lg:text-[21.5px] xl:text-[23.5px] rounded-none select-none transition hover:opacity-80 z-10">
@@ -129,7 +127,6 @@
             </div>
             <div class="exp_swiper swiper-container justify-between w-full mx-auto md:overflow-hidden">
                 <div class="swiper-wrapper">
-                    <!-- Card -->
                     <div
                         class="swiper-slide relative bg-white/10 overflow-hidden flex flex-col group shadow-lg max-w-[319px] w-[258px] md:w-full mx-auto ">
                         <img src="assets/images/top/exp01.png" alt="Diving with a local Ama diver in Ise-Shima"
@@ -174,7 +171,6 @@
                 Name of the featured tour here. Name of the featured tour here
             </p>
             <div class="flex flex-row gap-1 w-full justify-center items-start mb-8">
-                <!-- メイン画像: 差し替え用 -->
                 <div class="flex gap-4 w-full bg-[#19344d] overflow-hidden">
                     <div class="relative w-full max-w-[455px] swiper-container featured-swiper">
                         <div class="swiper-wrapper">
@@ -210,7 +206,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- サムネイル群: ホバーで切り替え -->
             </div>
             <p id="feature-desc"
                 class="text-[#eeeeee] text-[13px] md:text-[15px] leading-normal mb-7 max-w-[430px] mx-auto opacity-80">
@@ -383,7 +378,7 @@
                                 memorable time, away from the hustle and bustle of the cities.
                             </p>
                         </div>
-                        <a href="/about.html"
+                        <a href="about.html"
                             class="md:w-[40%] w-[90%] inline-block px-6 py-2 border border-white text-white text-[13px] tracking-wider
                     hover:bg-[#ffffffcc] hover:text-[#092F27] hover:border-[#ffffffcc] transition duration-200 text-center max-w-[420px]">
                             ABOUT ISE-SHIMA
@@ -408,7 +403,8 @@
     <section class="w-full flex flex-col items-center justify-center px-6 py-20 md:p-32 bg-[#060603]">
         <div class="w-full max-w-[600px] flex flex-col items-center gap-20">
             <h2 class="text-[#C4B28C] text-2xl md:text-3xl xl:text-[42px] text-center font-[garamond]">
-                Testimonials</h2>
+                Testimonials
+            </h2>
             <div class="w-full flex flex-row xl:gap-12 lg:gap-6 md:gap-10 gap-8 md:items-center">
                 <div class="md:w-1/3 w-full">
                     <img src="assets/images/top/testimonials01.png" alt="Testimonial 1"
@@ -462,7 +458,7 @@
         </div>
     </section>
     <footer
-        class="w-full min-h-[380px] flex flex-col items-center justify-center relative bg-[url('assets/images/top/footer.png')] px-6 bg-cover bg-center">
+        class="w-full min-h-[380px] flex flex-col items-center justify-center relative bg-[url('assets/images/main/footer.png')] px-6 bg-cover bg-center">
         <div
             class="w-full max-w-[600px] mx-auto flex flex-col items-center justify-center text-white xl:py-[190px] lg:py-[160px] md:py-[130px] py-[70px] relative gap-3 lg:gap-5 xl:gap-6 z-10">
             <div class="w-full flex justify-start mb-6">
@@ -472,29 +468,29 @@
             <div class="w-full flex flex-row items-center justify-between md:gap-0 gap-8 mb-8">
                 <nav
                     class="flex flex-col items-center md:items-start gap-10 md:gap-6 lg:gap-8 xl:gap-10 text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
-                    <a href="/index.html" class="hover:underline hover:opacity-60 transition">Top</a>
-                    <a href="/experiences.html" class="hover:underline hover:opacity-60 transition">Experiences</a>
-                    <a href="/tour.html" class="hover:underline hover:opacity-60 transition">Tour</a>
-                    <a href="/about.html" class="hover:underline hover:opacity-60 transition">About</a>
+                    <a href="index.html" class="hover:underline hover:opacity-60 transition">Top</a>
+                    <a href="experiences.html" class="hover:underline hover:opacity-60 transition">Experiences</a>
+                    <a href="tour.html" class="hover:underline hover:opacity-60 transition">Tour</a>
+                    <a href="about.html" class="hover:underline hover:opacity-60 transition">About</a>
                 </nav>
                 <div class="hidden md:block w-[1px] h-[70px] bg-white/10"></div>
                 <div class="flex flex-col items-center gap-4">
-                    <div class="flex flex-col items-center gap-4">
+                    <div class="flex flex-col items-center gap-5">
                         <button
-                            class="inline-block px-2 py-[4px] text-black bg-[#D0DBDB] text-[11px] mb-2 cursor-pointer transition hover:bg-[#f9faea]">
+                            class="inline-block px-2 py-[6px] text-black bg-[#D0DBDB] text-[11px] mb-2 cursor-pointer transition hover:bg-[#f9faea]">
                             English
                         </button>
-                        <a href="/index_ja.html"
-                            class="block text-white text-[11px]  hover:underline text-right tracking-[3px]">日本語</a>
-                        <a href="/index_ch.html"
-                            class="block text-white text-[11px]  hover:underline text-right tracking-[3px]">繁体字</a>
+                        <a href="index_ja.html"
+                            class="block text-white text-[11px] hover:underline text-right tracking-[3px]">日本語</a>
+                        <a href="index_ch.html"
+                            class="block text-white text-[11px] hover:underline text-right tracking-[3px]">繁体字</a>
                     </div>
                     <div class="xl:h-8 lg:h-6 md:h-4 h-2"></div>
                     <div class="flex flex-col gap-4 items-end xl:mt-7 mt-4">
-                        <a href="https://www.instagram.com/bonsai_matsushima/" aria-label="Instagram" class="p-0">
+                        <a href="" aria-label="Instagram" class="p-0">
                             <i class="fab fa-instagram text-white text-[26px]"></i>
                         </a>
-                        <a href="/contact.html" aria-label="Email" class="p-0">
+                        <a href="contact.html" aria-label="Email" class="p-0">
                             <i class="fa-regular fa-envelope text-white text-[24px]"></i>
                         </a>
                     </div>
@@ -521,7 +517,6 @@
                 class="transform -translate-y-full transition-transform duration-700 ease-in-out w-full h-full flex flex-col"
                 style="transition-property: transform;">
                 <div class="relative w-full h-full flex flex-col px-[40px]">
-                    <!-- Close Button -->
                     <button id="closeMainModalBtn" aria-label="Close menu"
                         class="absolute top-[34px] left-[40px] focus:outline-none bg-transparent border-none z-20">
                         <svg width="30px" height="20px" viewBox="0 0 155 115" fill="none">
@@ -529,41 +524,35 @@
                             <line x1="152" y1="3" x2="3" y2="112" stroke="white" stroke-width="6" />
                         </svg>
                     </button>
-                    <!-- Menu Content Grid -->
                     <div class="flex flex-1 flex-row w-full h-full mt-[160px] gap-[50px]">
-                        <!-- Navigation: left -->
                         <nav class="flex flex-col justify-start gap-9 pt-8 pl-2 w-2/3">
-                            <a href="/index.html"
+                            <a href="index.html"
                                 class="text-white text-[24px] lg:text-[28px] font-[garamond] hover:underline">Top</a>
-                            <a href="/experiences.html"
+                            <a href="experiences.html"
                                 class="text-white text-[24px] lg:text-[28px] font-[garamond] hover:underline">Experiences</a>
-                            <a href="/tour.html"
+                            <a href="tour.html"
                                 class="text-white text-[24px] lg:text-[28px] font-[garamond] hover:underline">Tour</a>
-                            <a href="/about.html"
+                            <a href="about.html"
                                 class="text-white text-[24px] lg:text-[28px] font-[garamond] hover:underline">About</a>
                         </nav>
-                        <!-- Language + social: right -->
                         <div class="flex flex-col items-center justify-start gap-3 w-1/3 pt-8">
-                            <!-- Language Switcher -->
                             <div class="flex flex-col items-center gap-4">
                                 <button
                                     class="inline-block px-2 py-[4px] text-black bg-[#D0DBDB] text-[11px] mb-2 cursor-pointer transition hover:bg-[#f9faea]">
                                     English
                                 </button>
-                                <a href="/index_ja.html"
+                                <a href="index_ja.html"
                                     class="block text-white text-[11px]  hover:underline text-right tracking-[3px]">日本語</a>
-                                <a href="/index_ch.html"
+                                <a href="index_ch.html"
                                     class="block text-white text-[11px]  hover:underline text-right tracking-[3px]">繁体字</a>
                             </div>
-                            <!-- Spacer -->
                             <div class="h-8"></div>
-                            <!-- Social links -->
                             <div class="flex flex-col gap-4 items-end mt-7">
                                 <a href="https://www.instagram.com/bonsai_matsushima/" aria-label="Instagram"
                                     class="p-0">
                                     <i class="fab fa-instagram text-white text-[26px]"></i>
                                 </a>
-                                <a href="/contact.html" aria-label="Email" class="p-0">
+                                <a href="contact.html" aria-label="Email" class="p-0">
                                     <i class="fa-regular fa-envelope text-white text-[24px]"></i>
                                 </a>
                             </div>
