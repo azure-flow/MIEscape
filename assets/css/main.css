@@ -74,6 +74,13 @@ body,
     padding: 1rem;
 }
 
+@media (max-width: 767px) {
+    .tab__label {
+        padding: 8px 16px;
+    }
+}
+
+
 .tab input:checked+.tab__label .fa-caret-down {
     display: none;
 }
