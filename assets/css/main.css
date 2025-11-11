@@ -13,13 +13,16 @@
     box-sizing: border-box;
 }
 
-body,
 * {
-    font-family: "Garamond Premier Pro";
+    font-family: 'EB Garamond', serif;
 }
 
 .simpleParallax {
     height: 100%;
+}
+
+.font-mincho {
+    font-family: "Zen Old Mincho", serif;
 }
 
 .font-garamond {

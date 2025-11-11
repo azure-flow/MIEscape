@@ -6,32 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIEscape | Tour</title>
 
-    <script src="assets/css/tailwind.css"></script>
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <link href="assets/css/font.css" rel="stylesheet" />
-    <link href="assets/css/swiper.css" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link href="assets/css/swiper.css" rel="stylesheet" />
+    <link href="assets/css/font.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    
+    <script src="assets/css/tailwind.css"></script>
 
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/simpleParallax.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <style>
-        body,
-        * {
-            font-family: "Garamond Premier Pro";
-        }
-
-        .simpleParallax {
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body>
     <section
-        class="relative bg-[url('assets/images/tour/fv_sp.webp')] md:bg-[url('assets/images/tour/fv.webp')] bg-cover bg-center h-[667px] md:h-[700px] lg:h-[800px] xl:h-[1080px]">
+        class="relative bg-[url('assets/images/fv_tour_sp.webp')] md:bg-[url('assets/images/fv_tour.webp')] bg-cover bg-center h-[667px] md:h-[700px] lg:h-[800px] xl:h-[1080px]">
         <div
             class="z-10 flex md:flex-col justify-between items-center md:items-start gap-6 fixed md:absolute top-[30px] md:top-[80px] lg:top-[100px]
          xl:top-[115px] left-[40px] md:left-[60px] lg:left-[100px] xl:left-[140px] md:max-w-[116.67px] md:h-[240px] lg:h-[390px] xl:h-[350px] max-h-[350px]">
@@ -107,15 +99,12 @@
     </section>
     <section class="max-h-[750px] group relative overflow-hidden parallax-section">
         <div
-            class="parallax-bg hidden md:block absolute top-0 left-0 w-full h-full bg-[url('assets/images/sunset02.webp')] bg-cover bg-center parallax-img -z-10">
-        </div>
-        <div
-            class="parallax-bg md:hidden block absolute top-0 left-0 w-full h-full bg-[url('assets/images/sunset02_sp.webp')] bg-cover bg-center parallax-img -z-10">
+            class="parallax-bg absolute top-0 left-0 w-full h-full bg-[url('assets/images/sunset02.webp')] bg-[-95%] bg-cover bg-center parallax-img -z-10">
         </div>
         <div
             class="hidden md:block pointer-events-none absolute inset-0 bg-black md:opacity-30 group-hover:opacity-0 transition-opacity duration-300 z-10">
         </div>
-        <div class="relative w-full h-[470px] md:h-[880px]"></div>
+        <div class="relative w-full h-[350px] md:h-[880px]"></div>
     </section>
     <section
         class="w-full h-[720px] md:h-full flex justify-center pt-20 md:py-40 bg-[url('assets/images/bg_ama02_sp.webp')] md:bg-[url('assets/images/bg_ama02.webp')] bg-cover bg-center">
@@ -185,17 +174,14 @@
             </div>
         </div>
     </section>
-    <section class="max-h-[750px] group relative overflow-hidden">
+    <section class="max-h-[750px] group relative overflow-hidden parallax-section">
         <div
-            class="hidden md:block absolute inset-0 w-full h-full bg-[url('assets/images/bg_toko.webp')] bg-cover bg-center bg-fixed z-0">
-        </div>
-        <div
-            class="md:hidden block absolute inset-0 w-full h-full bg-[url('assets/images/bg04_sp.webp')] bg-cover bg-fixed bg-center z-0">
+            class="parallax-bg absolute top-0 left-0 w-full h-full bg-[url('assets/images/bg_toko.webp')] bg-[-95%] bg-cover bg-center parallax-img -z-10">
         </div>
         <div
             class="hidden md:block pointer-events-none absolute inset-0 bg-black md:opacity-30 group-hover:opacity-0 transition-opacity duration-300 z-10">
         </div>
-        <div class="relative w-full h-[300px] md:h-[750px]"></div>
+        <div class="relative w-full h-[350px] md:h-[880px]"></div>
     </section>
     <section
         class="w-full h-[800px] md:h-full max-h-[1225px] flex justify-center pt-20 md:py-28 lg:py-40 bg-[url('assets/images/bg_part.webp')] bg-[length:1200px_800px] md:bg-cover bg-[75%] md:bg-center px-8">
@@ -236,7 +222,7 @@
         <div
             class="flex flex-col items-center justify-center w-full max-w-[900px] gap-20 md:gap-28 lg:gap-36 xl:gap-48">
             <div class="w-full flex flex-col gap-20">
-                <h2 class="text-[#C4B28C] text-2xl md:text-3xl xl:text-[42px] text-center font-[garamond]">
+                <h2 class="text-[#C4B28C] text-2xl md:text-3xl xl:text-[42px] text-center">
                     Access
                 </h2>
                 <div class="flex md:flex-row flex-col items-center w-full max-w-[800px] gap-7 md:gap-10 xl:gap-20">
@@ -253,40 +239,40 @@
                 </div>
             </div>
             <div class="max-w-[415px] md:w-1/2 w-full flex flex-col items-center p-4 gap-2 md:gap-10 lg:gap-16">
-                <h2 class="text-[#C4B28C] text-2xl md:text-3xl xl:text-[36px] text-center font-[garamond]">
+                <h2 class="text-[#C4B28C] text-2xl md:text-3xl xl:text-[36px] text-center ">
                     By Train
                 </h2>
                 <div class="relative w-full flex flex-col items-center gap-5">
                     <div class="absolute top-0 left-[15%] w-[1px] h-full bg-white z-10"></div>
                     <div
                         class="border border-white w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-black">
-                        <span class="text-white text-lg md:text-xl text-center font-[garamond]">JR Tokyo St.</span>
+                        <span class="text-white text-lg md:text-xl text-center ">JR Tokyo St.</span>
                     </div>
                     <div class="flex flex-col items-center">
                         <span class="text-white text-xs md:text-sm py-4">Shinkansen/1h40min</span>
                     </div>
                     <div
                         class="border border-white w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-black">
-                        <span class="text-white text-lg md:text-xl text-center font-[garamond]">JR Nagoya St.</span>
+                        <span class="text-white text-lg md:text-xl text-center ">JR Nagoya St.</span>
                     </div>
                     <div class="flex flex-col items-center">
                         <span class="text-white text-xs md:text-sm">Walk/10min</span>
                     </div>
                     <div
                         class="border border-white w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-black">
-                        <span class="text-white text-lg md:text-xl text-center font-[garamond]">Kintetsu Nagoya
+                        <span class="text-white text-lg md:text-xl text-center ">Kintetsu Nagoya
                             St.</span>
                     </div>
                     <div class="flex flex-col items-center">
                         <span class="text-white text-xs md:text-sm py-4">Kintetsu Limited Express/1h40min</span>
                     </div>
                     <div class="w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-white">
-                        <span class="text-[#9E895B] text-lg md:text-xl text-center font-[garamond]">Kashikojima</span>
+                        <span class="text-[#9E895B] text-lg md:text-xl text-center ">Kashikojima</span>
                     </div>
                 </div>
             </div>
             <div class="w-full flex flex-col items-center p-4 gap-2 md:gap-10 lg:gap-16">
-                <h2 class="text-[#C4B28C] text-2xl md:text-3xl xl:text-[36px] text-center font-[garamond]">
+                <h2 class="text-[#C4B28C] text-2xl md:text-3xl xl:text-[36px] text-center ">
                     From airport
                 </h2>
                 <div class="w-full h-full flex flex-col md:flex-row items-center gap-24 md:gap-16">
@@ -295,14 +281,14 @@
                         <div class="absolute top-0 left-[15%] w-[1px] h-full bg-white z-10"></div>
                         <div
                             class="border border-white w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-black">
-                            <span class="text-white text-lg md:text-xl text-center font-[garamond]">JR Nagoya St.</span>
+                            <span class="text-white text-lg md:text-xl text-center ">JR Nagoya St.</span>
                         </div>
                         <div class="flex flex-col items-center">
                             <span class="text-white text-xs md:text-sm">Walk/10min</span>
                         </div>
                         <div
                             class="border border-white w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-black">
-                            <span class="text-white text-lg md:text-xl text-center font-[garamond]">
+                            <span class="text-white text-lg md:text-xl text-center ">
                                 Kintetsu Nagoya St.
                             </span>
                         </div>
@@ -311,22 +297,21 @@
                                 Express/1h40min</span>
                         </div>
                         <div class="w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-white">
-                            <span
-                                class="text-[#9E895B] text-lg md:text-xl text-center font-[garamond]">Kashikojima</span>
+                            <span class="text-[#9E895B] text-lg md:text-xl text-center ">Kashikojima</span>
                         </div>
                     </div>
                     <div class="relative w-full flex flex-col items-center gap-8">
                         <div class="absolute top-0 left-[15%] w-[1px] h-full bg-white z-10"></div>
                         <div
                             class="border border-white w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-black">
-                            <span class="text-white text-lg md:text-xl text-center font-[garamond]">JR Nagoya St.</span>
+                            <span class="text-white text-lg md:text-xl text-center ">JR Nagoya St.</span>
                         </div>
                         <div class="flex flex-col items-center">
                             <span class="text-white text-xs md:text-sm">Walk/10min</span>
                         </div>
                         <div
                             class="border border-white w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-black">
-                            <span class="text-white text-lg md:text-xl text-center font-[garamond]">Kintetsu Nagoya
+                            <span class="text-white text-lg md:text-xl text-center ">Kintetsu Nagoya
                                 St.</span>
                         </div>
                         <div class="flex flex-col items-center">
@@ -335,8 +320,7 @@
                             </span>
                         </div>
                         <div class="w-full max-w-[415px] px-4 py-2 flex justify-center items-center z-20 bg-white">
-                            <span
-                                class="text-[#9E895B] text-lg md:text-xl text-center font-[garamond]">Kashikojima</span>
+                            <span class="text-[#9E895B] text-lg md:text-xl text-center ">Kashikojima</span>
                         </div>
                     </div>
                 </div>
@@ -356,11 +340,11 @@
             class="w-full max-w-[600px] mx-auto flex flex-col items-center justify-center text-white xl:py-[190px] lg:py-[160px] md:py-[130px] py-[70px] relative gap-3 lg:gap-5 xl:gap-6 z-10">
             <div class="w-full flex justify-start mb-6">
                 <span
-                    class="font-garamond text-[36px] sm:text-[40px] md:text-[44px] lg:text-[48px] xl:text-[55px] font-light tracking-wide">MIEscape</span>
+                    class="text-[36px] sm:text-[40px] md:text-[44px] lg:text-[48px] xl:text-[55px] font-light tracking-wide">MIEscape</span>
             </div>
             <div class="w-full flex flex-row items-center justify-between md:gap-0 gap-8 mb-8">
                 <nav
-                    class="flex flex-col items-center md:items-start gap-10 md:gap-6 lg:gap-8 xl:gap-10 text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
+                    class="flex flex-col items-start gap-10 md:gap-6 lg:gap-8 xl:gap-10 text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
                     <a href="index.html" class="hover:underline hover:opacity-60 transition">Top</a>
                     <a href="experiences.html" class="hover:underline hover:opacity-60 transition">Experiences</a>
                     <a href="tour.html" class="hover:underline hover:opacity-60 transition">Tour</a>
@@ -374,9 +358,9 @@
                             English
                         </button>
                         <a href="index_ja.html"
-                            class="block text-white text-[11px] hover:underline text-right tracking-[3px]">日本語</a>
+                            class="block text-white text-[11px] hover:underline text-right tracking-[3px] font-mincho font-mincho">日本語</a>
                         <a href="index_ch.html"
-                            class="block text-white text-[11px] hover:underline text-right tracking-[3px]">繁体字</a>
+                            class="block text-white text-[11px] hover:underline text-right tracking-[3px] font-mincho font-mincho">繁体字</a>
                     </div>
                     <div class="xl:h-8 lg:h-6 md:h-4 h-2"></div>
                     <div class="xl:h-8 lg:h-6 md:h-4 h-2"></div>
@@ -396,7 +380,7 @@
                     class="flex flex-row xl:gap-8 lg:gap-6 gap-4 text-[11px] md:text-[13px] lg:text-[14.5px] xl:text-[15.5px]">
                     <a class="hover:opacity-60 transition" href="policy.html" <span>Privacy
                         Policy</span></a>
-                    <a class="hover:opacity-60 transition" href="terms.html" <span>Terms of Use</span></a>
+                    <a class="hover:opacity-60 transition" href="terms.html"> <span>Terms of Use</span></a>
                 </div>
                 <div class="text-[8px] md:text-[9px] lg:text-[10px] xl:text-[11.5px]">
                     Copyright MIEscape All Rights Reserved.
@@ -420,14 +404,12 @@
                     </button>
                     <div class="flex flex-1 flex-row w-full h-full mt-[160px] gap-[50px]">
                         <nav class="flex flex-col justify-start gap-9 pt-8 pl-2 w-2/3">
-                            <a href="index.html"
-                                class="text-white text-[24px] lg:text-[28px] font-[garamond] hover:underline">Top</a>
+                            <a href="index.html" class="text-white text-[24px] lg:text-[28px]  hover:underline">Top</a>
                             <a href="experiences.html"
-                                class="text-white text-[24px] lg:text-[28px] font-[garamond] hover:underline">Experiences</a>
-                            <a href="tour.html"
-                                class="text-white text-[24px] lg:text-[28px] font-[garamond] hover:underline">Tour</a>
+                                class="text-white text-[24px] lg:text-[28px]  hover:underline">Experiences</a>
+                            <a href="tour.html" class="text-white text-[24px] lg:text-[28px]  hover:underline">Tour</a>
                             <a href="about.html"
-                                class="text-white text-[24px] lg:text-[28px] font-[garamond] hover:underline">About</a>
+                                class="text-white text-[24px] lg:text-[28px]  hover:underline">About</a>
                         </nav>
                         <div class="flex flex-col items-center justify-start gap-3 w-1/3 pt-8">
                             <div class="flex flex-col items-center gap-4">
@@ -436,9 +418,9 @@
                                     English
                                 </button>
                                 <a href="index_ja.html"
-                                    class="block text-white text-[11px]  hover:underline text-right tracking-[3px]">日本語</a>
+                                    class="block text-white text-[11px]  hover:underline text-right tracking-[3px] font-mincho">日本語</a>
                                 <a href="index_ch.html"
-                                    class="block text-white text-[11px]  hover:underline text-right tracking-[3px]">繁体字</a>
+                                    class="block text-white text-[11px]  hover:underline text-right tracking-[3px] font-mincho">繁体字</a>
                             </div>
                             <div class="h-8"></div>
                             <div class="flex flex-col gap-4 items-end mt-7">
