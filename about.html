@@ -84,7 +84,7 @@
         </div>
     </section>
     <section class="relative w-full max-h-[1400px] group relative overflow-hidden">
-        <img src="assets/images/about/bg.webp" alt="Tour background"
+        <img src="assets/images/bg.webp" alt="Tour background"
             class="w-full h-[820px] md:h-full object-[35%] object-cover">
         <div
             class="flex flex-row justify-center items-center absolute top-[40%] left-0 w-full h-[60%] px-8 bg-[linear-gradient(135deg,rgba(157,225,230,0.5)_0%,rgba(31,128,155,0.7)_22%,#051C2A_81%,#0D130B_98%)]">
@@ -105,13 +105,20 @@
             </div>
         </div>
     </section>
-    <section class="max-h-[770px] group relative overflow-hidden">
-        <img src="assets/images/about/sunset02.webp" alt="Tour background"
-            class="inset-0 w-full h-[345px] md:h-full object-[35%] object-cover bg-cover bg-center z-0">
-        </img>
+    <section class="max-h-[750px] group relative overflow-hidden parallax-section">
+        <div
+            class="parallax-bg hidden md:block absolute top-0 left-0 w-full h-full bg-[url('assets/images/sunset02.webp')] bg-cover bg-center parallax-img -z-10">
+        </div>
+        <div
+            class="parallax-bg md:hidden block absolute top-0 left-0 w-full h-full bg-[url('assets/images/sunset02_sp.webp')] bg-cover bg-center parallax-img -z-10">
+        </div>
+        <div
+            class="hidden md:block pointer-events-none absolute inset-0 bg-black md:opacity-30 group-hover:opacity-0 transition-opacity duration-300 z-10">
+        </div>
+        <div class="relative w-full h-[470px] md:h-[880px]"></div>
     </section>
     <section
-        class="w-full h-[720px] md:h-full flex justify-center pt-20 md:py-40 bg-[url('assets/images/about/bg_ama_sp.webp')] md:bg-[url('assets/images/about/bg_ama.webp')] bg-cover bg-center">
+        class="w-full h-[720px] md:h-full flex justify-center pt-20 md:py-40 bg-[url('assets/images/bg_ama02_sp.webp')] md:bg-[url('assets/images/bg_ama02.webp')] bg-cover bg-center">
         <div class="max-w-[1000px] flex flex-col md:flex-row gap-10 lg:gap-20 xl:gap-30">
             <div class="flex-1 flex flex-col gap-8 md:w-[200px] lg:w-[300px] xl:w-[360px] max-w-[360px] px-8 md:px-0">
                 <h1 class="max-w-[360px] text-white text-[28px] md:text-[22px] lg:text-[32px] xl:text-[38px]">
@@ -132,26 +139,26 @@
             </div>
             <div class="flex-1 flex items-end">
                 <div class="flex flex-row md:w-[250px] lg:w-[400px] xl:w-[500px] max-w-[500px]">
-                    <img src="assets/images/top/ama_item01.webp" alt="ama 1" class="w-1/3 aspect-[0.7] object-cover">
-                    <img src="assets/images/top/ama_item02.webp" alt="ama 2" class="w-1/3 aspect-[0.7] object-cover">
-                    <img src="assets/images/top/ama_item03.webp" alt="ama 3" class="w-1/3 aspect-[0.7] object-cover">
+                    <img src="assets/images/ama_item01.webp" alt="ama 1" class="w-1/3 aspect-[0.7] object-cover">
+                    <img src="assets/images/ama_item02.webp" alt="ama 2" class="w-1/3 aspect-[0.7] object-cover">
+                    <img src="assets/images/ama_item03.webp" alt="ama 3" class="w-1/3 aspect-[0.7] object-cover">
                 </div>
 
             </div>
         </div>
     </section>
     <section
-        class="flex flex-col-reverse md:flex-col w-full justify-center bg-[url('assets/images/top/bg_experience.webp')] bg-cover bg-center">
+        class="flex flex-col-reverse md:flex-col w-full justify-center bg-[url('assets/images/bg_experience.webp')] bg-cover bg-center">
         <div
             class="flex flex-col-reverse md:flex-col w-full pb-16 md:pb-0 justify-center bg-[linear-gradient(#00243000_0%,#00374A40_24%,#004A6366_34%,#011015CC_78%)] md:bg-transparent">
             <div class="grid grid-cols-1 md:grid-cols-2 px-12 md:px-0 gap-6 md:gap-0">
                 <div class="flex flex-row pr-8 md:pr-0 gap-2 md:gap-0">
-                    <img src="assets/images/about/his01.webp" alt="history 1" class="w-1/2 h-full object-cover">
-                    <img src="assets/images/about/his02.webp" alt="history 2" class="w-1/2 h-full object-cover">
+                    <img src="assets/images/his01.webp" alt="history 1" class="w-1/2 h-full object-cover">
+                    <img src="assets/images/his02.webp" alt="history 2" class="w-1/2 h-full object-cover">
                 </div>
                 <div class="flex flex-row pl-8 md:pl-0 gap-2 md:gap-0">
-                    <img src="assets/images/about/his03.webp" alt="history 3" class="w-1/2 h-full object-cover">
-                    <img src="assets/images/about/his04.webp" alt="history 4" class="w-1/2 h-full object-cover">
+                    <img src="assets/images/his03.webp" alt="history 3" class="w-1/2 h-full object-cover">
+                    <img src="assets/images/his04.webp" alt="history 4" class="w-1/2 h-full object-cover">
                 </div>
             </div>
             <div
@@ -180,10 +187,10 @@
     </section>
     <section class="max-h-[750px] group relative overflow-hidden">
         <div
-            class="hidden md:block absolute inset-0 w-full h-full bg-[url('assets/images/about/bg_toko.webp')] bg-cover bg-center bg-fixed z-0">
+            class="hidden md:block absolute inset-0 w-full h-full bg-[url('assets/images/bg_toko.webp')] bg-cover bg-center bg-fixed z-0">
         </div>
         <div
-            class="md:hidden block absolute inset-0 w-full h-full bg-[url('assets/images/about/bg04_sp.webp')] bg-cover bg-fixed bg-center z-0">
+            class="md:hidden block absolute inset-0 w-full h-full bg-[url('assets/images/bg04_sp.webp')] bg-cover bg-fixed bg-center z-0">
         </div>
         <div
             class="hidden md:block pointer-events-none absolute inset-0 bg-black md:opacity-30 group-hover:opacity-0 transition-opacity duration-300 z-10">
@@ -191,7 +198,7 @@
         <div class="relative w-full h-[300px] md:h-[750px]"></div>
     </section>
     <section
-        class="w-full h-[800px] md:h-full max-h-[1225px] flex justify-center pt-20 md:py-28 lg:py-40 bg-[url('assets/images/about/bg_part.webp')] bg-[length:1200px_800px] md:bg-cover bg-[75%] md:bg-center px-8">
+        class="w-full h-[800px] md:h-full max-h-[1225px] flex justify-center pt-20 md:py-28 lg:py-40 bg-[url('assets/images/bg_part.webp')] bg-[length:1200px_800px] md:bg-cover bg-[75%] md:bg-center px-8">
         <div class="max-w-[400px] flex flex-col gap-20 lg:gap-30 xl:gap-40 md:mr-64">
             <div class="flex-1 flex flex-col gap-8 md:w-[200px] lg:w-[300px] xl:w-[385px] max-w-[385px] ">
                 <h1 class="text-white text-[28px] md:text-[22px] lg:text-[32px] xl:text-[37px]">
@@ -226,14 +233,15 @@
         </div>
     </section>
     <section class="flex justify-center bg-black py-20 md:py-32 lg:py-40 xl:py-48 px-6 md:px-16 lg:px-36">
-        <div class="flex flex-col items-center justify-center w-full max-w-[900px] gap-20 md:gap-28 lg:gap-36 xl:gap-48">
+        <div
+            class="flex flex-col items-center justify-center w-full max-w-[900px] gap-20 md:gap-28 lg:gap-36 xl:gap-48">
             <div class="w-full flex flex-col gap-20">
                 <h2 class="text-[#C4B28C] text-2xl md:text-3xl xl:text-[42px] text-center font-[garamond]">
                     Access
                 </h2>
                 <div class="flex md:flex-row flex-col items-center w-full max-w-[800px] gap-7 md:gap-10 xl:gap-20">
                     <div class="w-2/3 md:p-4">
-                        <img src="assets/images/top/map.webp" alt="Japan map with Mie highlight" class="w-full h-auto">
+                        <img src="assets/images/map.webp" alt="Japan map with Mie highlight" class="w-full h-auto">
                     </div>
                     <div class="w-full md:w-1/3 flex">
                         <p class="text-white/90 text-[12px] lg:text-[14px] xl:text-[17px] leading-[2.6]">
@@ -343,7 +351,7 @@
     </section>
     <footer
         class="w-full min-h-[380px] flex flex-col items-center justify-center relative 
-        bg-[url('assets/images/main/footer.webp')] px-6 bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/20">
+        bg-[url('assets/images/footer.webp')] px-6 bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/20">
         <div
             class="w-full max-w-[600px] mx-auto flex flex-col items-center justify-center text-white xl:py-[190px] lg:py-[160px] md:py-[130px] py-[70px] relative gap-3 lg:gap-5 xl:gap-6 z-10">
             <div class="w-full flex justify-start mb-6">
@@ -358,7 +366,7 @@
                     <a href="tour.html" class="hover:underline hover:opacity-60 transition">Tour</a>
                     <a href="about.html" class="hover:underline hover:opacity-60 transition">About</a>
                 </nav>
-                <div class="hidden md:block w-[1px] h-[70px] bg-white/10"></div>
+
                 <div class="flex flex-col items-center gap-4">
                     <div class="flex flex-col items-center gap-5">
                         <button
@@ -370,6 +378,7 @@
                         <a href="index_ch.html"
                             class="block text-white text-[11px] hover:underline text-right tracking-[3px]">繁体字</a>
                     </div>
+                    <div class="xl:h-8 lg:h-6 md:h-4 h-2"></div>
                     <div class="xl:h-8 lg:h-6 md:h-4 h-2"></div>
                     <div class="flex flex-col gap-4 items-end xl:mt-7 mt-4">
                         <a href="" class="hover:opacity-60 transition" aria-label="Instagram" class="p-0">

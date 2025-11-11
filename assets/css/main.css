@@ -105,3 +105,10 @@ body,
         transform: rotate(90deg) translate(-.25rem);
     }
 }
+
+/* Parallax Fixed Background Optimization */
+.parallax-bg-fixed {
+    will-change: transform;
+    backface-visibility: hidden;
+    transition: transform 0.1s ease-out;
+}

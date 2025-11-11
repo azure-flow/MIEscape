@@ -10,6 +10,45 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Fixed Background - Only when section is in viewport (for all parallax sections)
+    (function () {
+        const sections = document.querySelectorAll('.parallax-section');
+        if (!sections.length) return;
+
+        function update() {
+            sections.forEach(section => {
+                const bgs = section.querySelectorAll('.parallax-bg');
+                if (!bgs.length) return;
+
+                const rect = section.getBoundingClientRect();
+                const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+
+                bgs.forEach(bg => {
+                    if (isInView) {
+                        bg.classList.remove('absolute');
+                        bg.classList.add('fixed', 'bg-fixed');
+                    } else {
+                        bg.classList.remove('fixed', 'bg-fixed');
+                        bg.classList.add('absolute');
+                    }
+                });
+            });
+        }
+
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    update();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+
+        update();
+    })();
+
     // Haumburger Button to open menu on smartphone
 
     const hamburgerBtn = document.getElementById('hamburgerBtn');
@@ -78,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // featured Swiper with vertical thumbs swiper 
 
     var featuredThumbsSwiper = new Swiper(".featured-thumbs-swiper", {
-        direction: 'vertical',
+        direction: window.innerWidth < 768 ? 'horizontal' : 'vertical',
         spaceBetween: 10,
         slidesPerView: 4,
         slidesPerGroup: 4,
@@ -88,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-
     });
 
     var featuredSwiper = new Swiper(".featured-swiper", {
@@ -111,6 +149,51 @@ document.addEventListener('DOMContentLoaded', function () {
             swiper: featuredThumbsSwiper,
         },
     });
+
+    var featured_thumbsContainer = document.getElementById("featuredThumbsContainer");
+
+    if (featured_thumbsContainer) {
+
+        // Get all thumbnail slides and images
+        var thumbSlides = featured_thumbsContainer.querySelectorAll(".swiper-slide");
+
+        // Get the Swiper instance for the main slider
+        var mainSwiper = null;
+        if (window.featuredSwiper) {
+            mainSwiper = window.featuredSwiper;
+        } else if (window.Swiper && document.querySelector('.featured-swiper').swiper) {
+            mainSwiper = document.querySelector('.featured-swiper').swiper;
+        }
+
+        thumbSlides.forEach(function (slide) {
+            // Mouse enter/hover event to trigger slide change
+            slide.addEventListener("mouseenter", function () {
+                var slideIndex = parseInt(slide.getAttribute('data-index'), 10);
+                if (mainSwiper && typeof mainSwiper.slideTo === "function") {
+                    mainSwiper.slideTo(slideIndex);
+                }
+            });
+
+            // Click event to trigger slide change
+            slide.addEventListener("click", function () {
+                var slideIndex = parseInt(slide.getAttribute('data-index'), 10);
+                if (mainSwiper && typeof mainSwiper.slideTo === "function") {
+                    mainSwiper.slideTo(slideIndex);
+                }
+            });
+
+            // Accessibility: allow Enter/Space to trigger
+            slide.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    var slideIndex = parseInt(slide.getAttribute('data-index'), 10);
+                    if (mainSwiper && typeof mainSwiper.slideTo === "function") {
+                        mainSwiper.slideTo(slideIndex);
+                    }
+                }
+            });
+        });
+    }
 
     // Double Thumbnail slider
 
@@ -153,12 +236,50 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    document.querySelectorAll('.featured-thumbs-swiper .swiper-slide').forEach(function (slide) {
-        slide.addEventListener('mouseover', function (item) {
-            console.log('bot');
-            this.click();
+    var experience_thumbsContainer = document.getElementById("experiencesThumbsContainer");
+
+    if (experience_thumbsContainer) {
+
+        // Get all thumbnail slides and images
+        var thumbSlides = experience_thumbsContainer.querySelectorAll(".swiper-slide");
+
+        // Get the Swiper instance for the main slider
+        var mainSwiper = null;
+        if (window.featuredSwiper) {
+            mainSwiper = window.featuredSwiper;
+        } else if (window.Swiper && document.querySelector('.experiences-swiper').swiper) {
+            mainSwiper = document.querySelector('.experiences-swiper').swiper;
+        }
+
+        thumbSlides.forEach(function (slide) {
+            // Mouse enter/hover event to trigger slide change
+            slide.addEventListener("mouseenter", function () {
+                var slideIndex = parseInt(slide.getAttribute('data-index'), 10);
+                if (mainSwiper && typeof mainSwiper.slideTo === "function") {
+                    mainSwiper.slideTo(slideIndex);
+                }
+            });
+
+            // Click event to trigger slide change
+            slide.addEventListener("click", function () {
+                var slideIndex = parseInt(slide.getAttribute('data-index'), 10);
+                if (mainSwiper && typeof mainSwiper.slideTo === "function") {
+                    mainSwiper.slideTo(slideIndex);
+                }
+            });
+
+            // Accessibility: allow Enter/Space to trigger
+            slide.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    var slideIndex = parseInt(slide.getAttribute('data-index'), 10);
+                    if (mainSwiper && typeof mainSwiper.slideTo === "function") {
+                        mainSwiper.slideTo(slideIndex);
+                    }
+                }
+            });
         });
-    });
+    }
 
     if (typeof AOS !== 'undefined' && AOS.init) {
         AOS.init({

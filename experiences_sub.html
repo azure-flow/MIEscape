@@ -32,7 +32,7 @@
 <body>
 
     <section
-        class="relative bg-[url('assets/images/experiences/fv_sp.webp')] md:bg-[url('assets/images/experiences/fv02.webp')] bg-cover bg-center h-[667px] md:h-[700px] lg:h-[800px] xl:h-[1080px]">
+        class="relative bg-[url('assets/images/fv_sp.webp')] md:bg-[url('assets/images/fv_expsub.webp')] bg-cover bg-center h-[667px] md:h-[700px] lg:h-[800px] xl:h-[1080px]">
         <div
             class="z-10 flex md:flex-col justify-between items-center md:items-start gap-6 fixed md:absolute top-[30px] md:top-[80px] lg:top-[100px]
              xl:top-[115px] left-[40px] md:left-[60px] lg:left-[100px] xl:left-[140px] md:max-w-[116.67px] md:h-[240px] lg:h-[390px] xl:h-[350px] max-h-[350px]">
@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <section class="w-full bg-[url('assets/images/main/bg01.webp')]  bg-cover bg-center ">
+    <section class="w-full bg-[url('assets/images/bg01.webp')]  bg-cover bg-center ">
         <div
             class="flex justify-center w-full py-16 px-8 md:px-24 lg:px-40 xl:px-40 xl:py-24 bg-[linear-gradient(180deg,rgba(0,36,48,0)_0%,rgba(0,55,74,0.25)_25%,rgba(0,74,99,0.4)_40%,rgba(0,45,60,0.6)_60%,rgba(6,6,3,1)_100%)]">
             <div class="w-full max-w-[600px] flex flex-col items-center gap-6 md:gap-10 lg:gap-14 xl:gap-20">
@@ -111,22 +111,22 @@
                     <div class="relative swiper-container experiences-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider01.webp" alt="Feature 1" class="w-full">
+                                <img src="assets/images/exp_slider01.webp" alt="Feature 1" class="w-full">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider02.webp" alt="Feature 2" class="w-full">
+                                <img src="assets/images/exp_slider02.webp" alt="Feature 2" class="w-full">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider03.webp" alt="Feature 3" class="w-full">
+                                <img src="assets/images/exp_slider03.webp" alt="Feature 3" class="w-full">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider04.webp" alt="Feature 4" class="w-full">
+                                <img src="assets/images/exp_slider04.webp" alt="Feature 4" class="w-full">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider05.webp" alt="Feature 4" class="w-full">
+                                <img src="assets/images/exp_slider05.webp" alt="Feature 4" class="w-full">
                             </div>
                             <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider06.webp" alt="Feature 4" class="w-full">
+                                <img src="assets/images/exp_slider06.webp" alt="Feature 4" class="w-full">
                             </div>
                         </div>
                     </div>
@@ -134,25 +134,26 @@
                         style="--swiper-navigation-color: #C4B28C; --swiper-pagination-color: #C4B28C">
                         <div class="swiper-pagination"></div>
                     </div>
-                    <div thumbsSlider="" class="w-full max-h-[385px] swiper-container experiences-thumbs-swiper">
+                    <div id="experiencesThumbsContainer" thumbsSlider=""
+                        class="w-full max-h-[385px] swiper-container experiences-thumbs-swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider01.webp" alt="Feature 1" class="w-full">
+                            <div class="swiper-slide" data-index="0">
+                                <img src="assets/images/exp_slider01.webp" alt="Feature 1" class="w-full">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider02.webp" alt="Feature 2" class="w-full">
+                            <div class="swiper-slide" data-index="1">
+                                <img src="assets/images/exp_slider02.webp" alt="Feature 2" class="w-full">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider03.webp" alt="Feature 3" class="w-full">
+                            <div class="swiper-slide" data-index="2">
+                                <img src="assets/images/exp_slider03.webp" alt="Feature 3" class="w-full">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider04.webp" alt="Feature 4" class="w-full">
+                            <div class="swiper-slide" data-index="3">
+                                <img src="assets/images/exp_slider04.webp" alt="Feature 4" class="w-full">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider05.webp" alt="Feature 4" class="w-full">
+                            <div class="swiper-slide" data-index="4">
+                                <img src="assets/images/exp_slider05.webp" alt="Feature 4" class="w-full">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="assets/images/experiences/exp_slider06.webp" alt="Feature 4" class="w-full">
+                            <div class="swiper-slide" data-index="5">
+                                <img src="assets/images/exp_slider06.webp" alt="Feature 4" class="w-full">
                             </div>
                         </div>
                     </div>
@@ -188,8 +189,8 @@
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12 lg:gap-x-6 lg:gap-y-12 xl:gap-x-10 xl:gap-y-32 md:gap-y-16">
                     <div class="flex flex-col gap-8 lg:gap-6 xl:gap-10 col-span-1 relative">
-                        <img src="assets/images/experiences/exp_sub01.webp"
-                            alt="Diving with a local Ama diver in Ise-Shima" class="w-full aspect-[8/5] object-cover">
+                        <img src="assets/images/exp_sub01.webp" alt="Diving with a local Ama diver in Ise-Shima"
+                            class="w-full aspect-[8/5] object-cover">
                         <div class="bg-transparent">
                             <p class="text-[12px] md:text-[14px] lg:text-[15px] xl:text-[17px] text-white leading-[2]">
                                 Private boat cruise to a secluded floating bar, featuring sea views and conversations
@@ -198,8 +199,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-8 lg:gap-6 xl:gap-10 col-span-1 relative">
-                        <img src="assets/images/experiences/exp_sub02.webp"
-                            alt="Diving with a local Ama diver in Ise-Shima" class="w-full aspect-[8/5] object-cover">
+                        <img src="assets/images/exp_sub02.webp" alt="Diving with a local Ama diver in Ise-Shima"
+                            class="w-full aspect-[8/5] object-cover">
                         <div class="bg-transparent">
                             <p class="text-[12px] md:text-[14px] lg:text-[15px] xl:text-[17px] text-white leading-[2]">
                                 Private boat cruise to a secluded floating bar, featuring sea views and conversations
@@ -208,8 +209,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-8 lg:gap-6 xl:gap-10 col-span-1 relative">
-                        <img src="assets/images/experiences/exp_sub03.webp"
-                            alt="Diving with a local Ama diver in Ise-Shima" class="w-full aspect-[8/5] object-cover">
+                        <img src="assets/images/exp_sub03.webp" alt="Diving with a local Ama diver in Ise-Shima"
+                            class="w-full aspect-[8/5] object-cover">
                         <div class="bg-transparent">
                             <p class="text-[12px] md:text-[14px] lg:text-[15px] xl:text-[17px] text-white leading-[2]">
                                 Private boat cruise to a secluded floating bar, featuring sea views and conversations
@@ -218,8 +219,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-8 lg:gap-6 xl:gap-10 col-span-1 relative">
-                        <img src="assets/images/experiences/exp_sub04.webp"
-                            alt="Diving with a local Ama diver in Ise-Shima" class="w-full aspect-[8/5] object-cover">
+                        <img src="assets/images/exp_sub04.webp" alt="Diving with a local Ama diver in Ise-Shima"
+                            class="w-full aspect-[8/5] object-cover">
                         <div class="bg-transparent">
                             <p class="text-[12px] md:text-[14px] lg:text-[15px] xl:text-[17px] text-white leading-[2]">
                                 Private boat cruise to a secluded floating bar, featuring sea views and conversations
@@ -448,7 +449,7 @@
         </div>
     </section>
     <section
-        class="w-full bg-[url('assets/images/main/bg01.webp')] bg-cover bg-center relative before:content-[''] before:absolute before:inset-0 before:bg-black/60">
+        class="w-full bg-[url('assets/images/bg_green.webp')] bg-cover bg-center relative before:content-[''] before:absolute before:inset-0 before:bg-black/60">
         <div
             class="relative flex flex-col justify-center items-center w-full pt-16 pb-32 xl:pt-24 xl:pb-52 px-8 md:px-24 lg:px-40 xl:px-40 gap-16 md:gap-20 xl:gap-24">
             <div class="w-full max-w-[600px] flex flex-col items-center gap-6 md:gap-10 lg:gap-14 xl:gap-20">
@@ -463,8 +464,8 @@
                 <div
                     class="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12 lg:gap-x-6 lg:gap-y-12 xl:gap-x-10 xl:gap-y-16 md:gap-y-8">
                     <div class="flex flex-col gap-2 lg:gap-4 xl:gap-6 col-span-1 relative">
-                        <img src="assets/images/experiences/exp_sub01.webp"
-                            alt="Diving with a local Ama diver in Ise-Shima" class="w-full aspect-[8/5] object-cover">
+                        <img src="assets/images/exp_sub01.webp" alt="Diving with a local Ama diver in Ise-Shima"
+                            class="w-full aspect-[8/5] object-cover">
                         <div class="bg-transparent">
                             <p class="text-[12px] md:text-[15px] lg:text-[17px] xl:text-[20px] text-white leading-[2]">
                                 Ago Bay Sunset Cruise – Private Charter
@@ -472,8 +473,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 lg:gap-4 xl:gap-6 col-span-1 relative">
-                        <img src="assets/images/experiences/exp_sub02.webp"
-                            alt="Diving with a local Ama diver in Ise-Shima" class="w-full aspect-[8/5] object-cover">
+                        <img src="assets/images/exp_sub02.webp" alt="Diving with a local Ama diver in Ise-Shima"
+                            class="w-full aspect-[8/5] object-cover">
                         <div class="bg-transparent">
                             <p class="text-[12px] md:text-[15px] lg:text-[17px] xl:text-[20px] text-white leading-[2]">
                                 Ago Bay Sunset Cruise – Private Charter
@@ -481,8 +482,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 lg:gap-4 xl:gap-6 col-span-1 relative">
-                        <img src="assets/images/experiences/exp_sub03.webp"
-                            alt="Diving with a local Ama diver in Ise-Shima" class="w-full aspect-[8/5] object-cover">
+                        <img src="assets/images/exp_sub03.webp" alt="Diving with a local Ama diver in Ise-Shima"
+                            class="w-full aspect-[8/5] object-cover">
                         <div class="bg-transparent">
                             <p class="text-[12px] md:text-[15px] lg:text-[17px] xl:text-[20px] text-white leading-[2]">
                                 Ago Bay Sunset Cruise – Private Charter
@@ -490,8 +491,8 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 lg:gap-4 xl:gap-6 col-span-1 relative">
-                        <img src="assets/images/experiences/exp_sub04.webp"
-                            alt="Diving with a local Ama diver in Ise-Shima" class="w-full aspect-[8/5] object-cover">
+                        <img src="assets/images/exp_sub04.webp" alt="Diving with a local Ama diver in Ise-Shima"
+                            class="w-full aspect-[8/5] object-cover">
                         <div class="bg-transparent">
                             <p class="text-[12px] md:text-[15px] lg:text-[17px] xl:text-[20px] text-white leading-[2]">
                                 Ago Bay Sunset Cruise – Private Charter
@@ -521,7 +522,7 @@
     </section>
     <footer
         class="w-full min-h-[380px] flex flex-col items-center justify-center relative 
-        bg-[url('assets/images/main/footer.webp')] px-6 bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/20">
+        bg-[url('assets/images/footer.webp')] px-6 bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/20">
         <div
             class="w-full max-w-[600px] mx-auto flex flex-col items-center justify-center text-white xl:py-[190px] lg:py-[160px] md:py-[130px] py-[70px] relative gap-3 lg:gap-5 xl:gap-6 z-10">
             <div class="w-full flex justify-start mb-6">
@@ -536,7 +537,7 @@
                     <a href="tour.html" class="hover:underline hover:opacity-60 transition">Tour</a>
                     <a href="about.html" class="hover:underline hover:opacity-60 transition">About</a>
                 </nav>
-                <div class="hidden md:block w-[1px] h-[70px] bg-white/10"></div>
+
                 <div class="flex flex-col items-center gap-4">
                     <div class="flex flex-col items-center gap-5">
                         <button
@@ -548,6 +549,7 @@
                         <a href="index_ch.html"
                             class="block text-white text-[11px] hover:underline text-right tracking-[3px]">繁体字</a>
                     </div>
+                    <div class="xl:h-8 lg:h-6 md:h-4 h-2"></div>
                     <div class="xl:h-8 lg:h-6 md:h-4 h-2"></div>
                     <div class="flex flex-col gap-4 items-end xl:mt-7 mt-4">
                         <a href="" class="hover:opacity-60 transition" aria-label="Instagram" class="p-0">
@@ -614,7 +616,8 @@
                                     class="p-0">
                                     <i class="fab fa-instagram text-white text-[26px]"></i>
                                 </a>
-                                <a href="contact.html" class="hover:opacity-60 transition" aria-label="Email" class="p-0">
+                                <a href="contact.html" class="hover:opacity-60 transition" aria-label="Email"
+                                    class="p-0">
                                     <i class="fa-regular fa-envelope text-white text-[24px]"></i>
                                 </a>
                             </div>
